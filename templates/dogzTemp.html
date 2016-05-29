@@ -1,0 +1,9 @@
+<h2>Dogz!</h2>
+<p>Here is a list of all the dogz. Select a dog to learn more about it.</p>
+
+<a ui-sref="dogByID({dogID: dog.breed})">
+<div ng-repeat="dog in dogz">
+<h2>{{dog.breed}}</h2>
+<img ng-src="{{dog.image}}">
+</div>
+</a>
